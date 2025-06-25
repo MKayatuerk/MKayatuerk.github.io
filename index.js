@@ -11,6 +11,7 @@ else if (platform.os.toString().includes("Android")) {
     window.open("https://www.hololink.io/","_self");
 }
 else if (platform.os.toString().includes("iOS")
-    || platform.os.toString().includes("Mac")) {
+    || platform.os.toString().includes("Mac")
+    || platform.os.toString().includes("OS X")) {
     window.open("https://scenery.app/","_self");
 }
