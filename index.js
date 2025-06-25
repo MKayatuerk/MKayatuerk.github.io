@@ -10,7 +10,7 @@ if (platform.os.toString().includes("Windows")) {
 else if (platform.os.toString().includes("Android")) {
     window.open("https://www.hololink.io/","_self");
 }
-else if (platform.os.toString().includes("IOS")
-    && platform.os.toString().includes("Mac")) {
+else if (platform.os.toString().includes("iOS")
+    || platform.os.toString().includes("Mac")) {
     window.open("https://scenery.app/","_self");
 }
