@@ -1,7 +1,7 @@
 
 const OSDisplay = document.getElementById("OSDisplay");
 let OS = platform.os.toString();
-let manufacturer = platform.manufacturer
+let manufacturer = platform.product;
 
 
 OSDisplay.innerHTML += OS;
