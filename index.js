@@ -1,22 +1,28 @@
 
 const OSDisplay = document.getElementById("OSDisplay");
+const ManufactorDisplay = document.getElementById("ManufactorDisplay");
+const ProductDisplay = document.getElementById("ProductDisplay");
+const goal = document.getElementById("goal");
+
+
 let OS = platform.os.toString();
-let manufacturer = platform.product;
+let manufacturer = platform.manufacturer;
+let product = platform.product;
 
 
 OSDisplay.innerHTML += OS;
-OSDisplay.innerHTML += " ";
-OSDisplay.innerHTML += manufacturer;
+ManufactorDisplay.innerHTML += manufacturer;
+ProductDisplay.innerHTML += product;
 
 if (platform.os.toString().includes("Android")) {
     //window.open("https://www.hololink.io/","_self");
-    OSDisplay.innerHTML += OS;
+    goal.innerHTML += "Am in Android!";
 }
 else if (platform.os.toString().includes("iOS") || manufacturer.includes("iP")) {
     //window.open("https://scenery.app/","_self");
-    OSDisplay.innerHTML += OS;
+    goal.innerHTML += "Am in IOS!";
 }
 else {
-    OSDisplay.innerHTML += "Something else";
+    goal.innerHTML += "Am in else!";
     //window.open("https://mirevi.de/", "_self");
 }
